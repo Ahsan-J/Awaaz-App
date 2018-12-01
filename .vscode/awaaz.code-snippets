@@ -1,0 +1,84 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"FunctionFileInit": {
+		"scope": "javascript",
+		"prefix": "func",
+		"body": [
+			"import React from 'react'",
+			"import _ from 'lodash'",
+			"",
+			"export default {",
+			"",
+			"  /**********************LifeCycle Components in Order **********************************/",
+			"  ",
+			"  /***********************Additonal Functions to be used within component ***************/",
+			"",
+			"  /**********************Connecting and defining the Redux ******************************/",
+			"  mapStateToProps: function (state) {",
+			"    return {",
+			"      ",
+			"    }",
+			"  },",
+			"",
+			"  mapDispatchToProps: function (dispatch) {",
+			"    return {",
+			"      ",
+			"    }",
+			"  },",
+			"}",
+			"",
+			"// Local functions limitng to only this component",
+		],
+		"description": "function file init for component"
+	},
+	"StyleFileInit": {
+		"scope": "javascript",
+		"prefix": "style",
+		"body": [
+			"import {StyleSheet} from 'react-native'",
+			"",
+			"export default StyleSheet.create({",
+			"  ",
+			"});",
+			"",
+		],
+		"description": "styles file init for component",
+	},
+	"ComponentFileInit": {
+		"scope": "javascript",
+		"prefix": "init",
+		"body": [
+			" import React, {Component} from 'react';",
+			" import {connect} from 'react-redux'",
+			" import {Text, View} from 'react-native';",
+			" import {} from 'native-base'",
+			" import f from './function.js'",
+			" import styles from './style.js'",
+			" ",
+			" class Home extends Component {",
+			"constructor(props) {",
+			"super(props);",
+			"this.state = {",
+			"",
+			"}",
+			"}",
+			"render() {",
+			"return (",
+			"<View style={styles.container}>",
+			"",
+			"</View>",
+			");",
+			"}",
+			" }",
+			" ",
+			" export default connect(f.mapStateToProps.bind(this),f.mapDispatchToProps.bind(this))(Home)",
+		],
+		"description": "Component init"
+	},
+}
