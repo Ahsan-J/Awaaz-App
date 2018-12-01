@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View, StatusBar } from 'react-native';
 import Navigator from './navigator/routes.js'
 import {getDeviceHeight,getDeviceWidth} from './helpers/sizeHelpers.js'
 import SplashScreen from 'react-native-splash-screen'
+import Drawer from './components/drawer/drawer.js'
 
 // Global Component to handle global files
 export default class App extends Component {
@@ -13,9 +14,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Drawer style={styles.container}>
+        <StatusBar hidden/>
         <Navigator />
-      </View>
+      </Drawer>
     );
   }
 }
