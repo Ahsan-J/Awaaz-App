@@ -1,8 +1,8 @@
-import actions from '../actionTypes/general.js'
+import {SET_ACTIVE_ROUTE } from '../actionTypes/general.js'
 
-export function addCount(counter){
+export function setActiveRoute (activeRoute) {
     return {
-        type:actions.ADD_COUNT,
-        counter,
+        type:SET_ACTIVE_ROUTE,
+        activeRoute
     }
 }

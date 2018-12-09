@@ -1,15 +1,15 @@
-import actionTypes from '../actionTypes/general.js'
+import {SET_ACTIVE_ROUTE} from '../actionTypes/general.js'
 
 var generalVarables = {
-	counter : 0
+	activeRoute : 'Dashboard'
 };
 export default function (state = generalVarables, action) {
 	switch (action.type) {
 		
-		case actionTypes.ADD_COUNT:
+		case SET_ACTIVE_ROUTE:
 			return state = {
 				...state,
-				counter : action.counter
+				activeRoute : action.activeRoute
 			}
 
 		default:

@@ -1,3 +1,3 @@
-export default {
-  ADD_COUNT : "ADD_COUNT",
+module.exports = {
+ "SET_ACTIVE_ROUTE" : "SET_ACTIVE_ROUTE",
 }
