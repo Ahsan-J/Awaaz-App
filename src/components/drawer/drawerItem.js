@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Text, View } from 'react-native';
-import { Container } from 'native-base'
+import { View } from 'react-native';
+import { Content, Button, Text } from 'native-base'
 import f from './function.js'
+import Icon from 'react-native-vector-icons/FontAwesome'
 import styles from './style.js'
 
 class DrawerItems extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-
-    }
+    this.renderDrawerItems = f.renderDrawerItems.bind(this);
   }
   render() {
     return (
-      <Container style={styles.itemContainer}>
+      <Content style={styles.itemContainer}>
         <View style={styles.userWrapper}>
 
         </View>
-      </Container>
+        <View style={styles.menuWrapper}>
+          {this.renderDrawerItems(this.props.activeRoute)}
+          <Button style={styles.menuButton} transparent full>
+            <Icon name="power-off" style={styles.menuIcon} />
+            <Text uppercase={false} style={styles.menuText}>Logout</Text>
+          </Button>
+        </View>
+      </Content>
     );
   }
 }
 
-export default connect(f.mapStateToProps.bind(this), f.mapDispatchToProps.bind(this))(DrawerItems)
+export default connect(f.mapStateToProps, f.mapDispatchToProps)(DrawerItems)

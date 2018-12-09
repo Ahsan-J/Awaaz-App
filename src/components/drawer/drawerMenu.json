@@ -1,0 +1,52 @@
+[
+  {
+    "icon" : "tachometer",
+    "menuLabel" : "Dashboard",
+    "screenName" : "Dashboard"
+  },
+  {
+    "icon" : "book",
+    "menuLabel" : "Register",
+    "screenName" : "Register"
+  },
+  {
+    "icon" : "file-text",
+    "menuLabel" : "Report",
+    "screenName" : "Report"
+  },
+  {
+    "icon" : "exclamation-circle",
+    "menuLabel" : "Emergency Alert",
+    "screenName" : "EmergencyAlert"
+  },
+  {
+    "icon" : "map-marker",
+    "menuLabel" : "Find Alert",
+    "screenName" : "FindAlert"
+  },
+  {
+    "icon" : "video-camera",
+    "menuLabel" : "Record Now",
+    "screenName" : "RecordNow"
+  },
+  {
+    "icon" : "folder-open",
+    "menuLabel" : "My Cases",
+    "screenName" : "MyCases"
+  },
+  {
+    "icon" : "info-circle",
+    "menuLabel" : "Authorities Info",
+    "screenName" : "AuthoritiesInfo"
+  },
+  {
+    "icon" : "rss",
+    "menuLabel" : "Blogs",
+    "screenName" : "Blogs"
+  },
+  {
+    "icon" : "bullhorn",
+    "menuLabel" : "About us",
+    "screenName" : "AboutUs"
+  }
+]

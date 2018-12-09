@@ -8,13 +8,6 @@ import { setTopLevelDrawer, closeDrawer } from '../../helpers/drawerHelper'
 import DrawerItems from './drawerItem.js'
 
 class AwaazDrawer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
-
   render() {
     return (
       <Drawer
@@ -30,4 +23,4 @@ class AwaazDrawer extends Component {
   }
 }
 
-export default connect(f.mapStateToProps.bind(this), f.mapDispatchToProps.bind(this))(AwaazDrawer)
+export default connect(f.mapStateToProps, f.mapDispatchToProps)(AwaazDrawer)
