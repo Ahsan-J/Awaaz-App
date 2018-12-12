@@ -1,21 +1,30 @@
 import {StyleSheet} from 'react-native'
 import theme from '../../constant/theme';
+import { moderateScale } from '../../helpers/sizeHelpers';
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: theme.blackColor,
+    backgroundColor: theme.secondaryColor,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  buttonsWrapper : {
+    flexDirection:'row',
+    justifyContent:'space-evenly'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#ffffff',
-    marginBottom: 5,
+  touchableWrapper : {
+    margin:moderateScale(0.5),
+    alignItems:'center',
+    justifyContent:'center',
+    borderWidth : moderateScale(1),
+    borderColor : theme.primaryColor,
   },
+  buttonText : {
+    marginTop : moderateScale(10),
+    color : theme.fontPrimaryColor,
+  },  
+  buttonIcon : {
+    color : theme.fontPrimaryColor,
+    fontSize : moderateScale(30),
+  },
+
 });
