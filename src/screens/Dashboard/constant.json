@@ -1,0 +1,16 @@
+{
+  "Buttons" : [
+    {
+      "title" : "Alert",
+      "iconName" : "exclamation-circle"
+    },
+    {
+      "title" : "Record Now",
+      "iconName" : "microphone"
+    },
+    {
+      "title" : "Report",
+      "iconName" : "file-text-o"
+    }
+  ]
+}
