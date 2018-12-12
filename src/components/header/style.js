@@ -16,7 +16,7 @@ export default StyleSheet.create({
   },
   headerLeftIcon:{
     fontSize:scale(28),
-    color : theme.blackColor,
+    color : theme.secondaryColor,
   },
   headerBody : {
     flex:0.7,
@@ -25,7 +25,7 @@ export default StyleSheet.create({
   },
   headerTitle:{
     fontWeight:'400',
-    color:theme.blackColor,
+    color:theme.secondaryColor,
   },  
   headerRight : {
     flex:0.15,

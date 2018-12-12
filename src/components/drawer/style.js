@@ -8,7 +8,7 @@ export default StyleSheet.create({
   // Drawer Items
 
   itemContainer: {
-    backgroundColor: theme.blackColor
+    backgroundColor: theme.secondaryColor
   },
   userWrapper : {
     backgroundColor:theme.primaryColor,

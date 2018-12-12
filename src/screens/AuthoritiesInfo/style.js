@@ -6,7 +6,7 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.blackColor,
+    backgroundColor: theme.secondaryColor,
   },
   welcome: {
     fontSize: 20,
