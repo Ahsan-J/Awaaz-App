@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native'
 import theme from '../../constant/theme';
+import { getDeviceWidth, getDeviceHeight, moderateScale } from '../../helpers/sizeHelpers';
 
 export default StyleSheet.create({
   container: {
@@ -8,14 +9,52 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: theme.secondaryColor,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  avatarContainer : {
+    height : getDeviceHeight()*0.25,
+    width : getDeviceWidth(),
+    alignItems:'center',
+    justifyContent:'center',
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#ffffff',
-    marginBottom: 5,
+  exchangeIconTouchable:{
+    position:'absolute',
+    top:0,
+    right:0,
   },
+  exchangeIcon : {
+    fontSize:moderateScale(16),
+    color : theme.primaryColor,
+    padding:moderateScale(4),
+  },
+  formWrapper : {
+    height:getDeviceHeight()*.95,
+    alignItems:'center',
+    justifyContent:'flex-start',
+  },
+  form : {
+    height:getDeviceHeight()*0.9,
+    width : getDeviceWidth()*0.95,
+    justifyContent:'space-around'
+  },
+  item : {
+    justifyContent:'space-between'
+  },
+  label : {
+    flex: 0.43,
+    paddingRight:0,
+    marginRight : 0
+  },
+  input : {
+    color : theme.fontPrimaryColor,
+    flex:0.57,
+  },
+  genderPicker : {
+    width:moderateScale(100),
+  },
+  registerButton : {
+    backgroundColor : theme.primaryColor,
+  },
+  registerText : {
+    color : theme.fontPrimaryColor,
+    fontSize : moderateScale(20)
+  }
 });

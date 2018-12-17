@@ -11,7 +11,14 @@ export default {
   },
 
   /***********************Additonal Functions to be used within component ***************/
-
+  onValueChange2 : function(value) {
+    this.setState({
+      selected2: value
+    });
+  },
+  setDate(newDate) {
+    this.setState({ chosenDate: newDate });
+  },
   /**********************Connecting and defining the Redux ******************************/
   mapStateToProps: function (state) {
     return {
