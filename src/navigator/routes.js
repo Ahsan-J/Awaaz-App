@@ -10,6 +10,8 @@ import MyCases from '../screens/MyCases/MyCases.js'
 import AuthoritiesInfo from '../screens/AuthoritiesInfo/AuthoritiesInfo.js'
 import Blogs from '../screens/Blogs/Blogs.js'
 import AboutUs from '../screens/AboutUs/AboutUs.js'
+import Profile from '../screens/Profile/Profile.js'
+import Login from '../screens/Login/Login.js'
 
 const AppNavigator = createStackNavigator({
   Dashboard: {
@@ -42,10 +44,16 @@ const AppNavigator = createStackNavigator({
   AboutUs: {
     screen: AboutUs
   },
+  Profile : {
+    screen: Profile
+  },
+  Login : {
+    screen : Login
+  }
 },
   {
     headerMode: 'none',
-    initialRouteName: 'Dashboard',
+    initialRouteName: 'Login',
     navigationOptions: {
       gesturesEnabled: true,
     },
