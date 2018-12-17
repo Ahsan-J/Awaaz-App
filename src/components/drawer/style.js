@@ -12,7 +12,34 @@ export default StyleSheet.create({
   },
   userWrapper : {
     backgroundColor:theme.primaryColor,
-    height:getDeviceHeight()*0.25
+    height:getDeviceHeight()*0.25,
+    justifyContent:'center'
+  },
+  userWrapperInner : { 
+    flex: 0.52, 
+    flexDirection: 'row', 
+    justifyContent: 'center' 
+  },
+  userWrapperTouchable : {
+    flex: 0.85, 
+    flexDirection: 'row' 
+  },
+  imageWrapper : {
+    flex:0.38,
+    justifyContent:'center',
+    alignItems : 'flex-start',
+  },
+  profileDetailWrapper:{
+    flex:0.6,
+    justifyContent:'center',
+  },  
+  profileName : {
+    color : theme.fontPrimaryColor,
+    fontSize : moderateScale(18),
+  },
+  profileAccountType : {
+    color : theme.fontPrimaryColor,
+    fontSize: moderateScale(12)
   },
   menuWrapper:{
     paddingLeft:moderateScale(25),
