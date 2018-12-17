@@ -61,7 +61,7 @@ class Login extends Component {
                 <Text uppercase={false}  style={styles.googleText}> Sign in with Google</Text>
               </Button>
             </View>
-            <Text style={[styles.statusText, styles.postButtonText]}>Want to Register yourself</Text>
+            <Text style={[styles.statusText, styles.postButtonText]}>Want to Register yourself?</Text>
             <Text style={[styles.statusText, styles.postButtonText]}>Skip and Become "Anonymous"</Text>
           </Form>
         </View>

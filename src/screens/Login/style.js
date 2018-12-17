@@ -14,7 +14,7 @@ export default StyleSheet.create({
     flex:0.3
   },
   formWrapper : {
-    flex:0.4,
+    flex:0.5,
     flexDirection : 'row',
     justifyContent:'center'
   },
@@ -25,7 +25,7 @@ export default StyleSheet.create({
     // marginBottom : moderateScale(10),
   },
   item : {
-    justifyContent:'space-around'
+    justifyContent:'space-around',
   },
   label : {
     flex: 0.35,
