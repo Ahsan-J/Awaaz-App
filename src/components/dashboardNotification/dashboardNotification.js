@@ -6,7 +6,7 @@ import {
   TouchableOpacity, 
 } from 'react-native';
 import { } from 'native-base'
-import f from './function.js'
+import f, { applyBackgroundColor } from './function.js'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import styles from './style.js'
 import PropTypes from 'prop-types';
@@ -20,14 +20,17 @@ class DashboardNotification extends Component {
     
   }
   render() {
+    if(this.props['hide']) {
+      return null
+    }
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.touchable} onPress={this.props.onSelect}>
+        <TouchableOpacity style={[styles.touchable,applyBackgroundColor(this.props)]} onPress={this.props.onPress}>
           {/* Times cross Icon to disable notification*/}
           <TouchableOpacity style={styles.crossIconTouchable} onPress={this.props.onDismiss}>
             <Icon name="times" style={styles.crossIcon}/>
           </TouchableOpacity>
-          <Text style={styles.text}>{this.props.text}</Text>
+          <Text style={styles.text}>{this.props.children}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -37,7 +40,8 @@ class DashboardNotification extends Component {
 DashboardNotification.propTypes = {
   text : PropTypes.string,
   onDismiss : PropTypes.func,
-  onSelect : PropTypes.func
+  onPress : PropTypes.func,
+  hide : PropTypes.bool,
 }
 
 export default connect(f.mapStateToProps.bind(this), f.mapDispatchToProps.bind(this))(DashboardNotification)

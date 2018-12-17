@@ -14,6 +14,7 @@ export default StyleSheet.create({
     height : verticalScale(80),
     justifyContent :'center',
     flex:1,
+    borderRadius : moderateScale(4),
     margin: moderateScale(8),
     padding: moderateScale(5),
   },
@@ -21,12 +22,12 @@ export default StyleSheet.create({
     position : 'absolute',
     justifyContent:'center',
     alignItems : 'center',
-    padding : moderateScale(8),
+    padding : moderateScale(5),
     right : 0,
     top : 0,
   },
   crossIcon : {
-
+    fontSize : moderateScale(18)
   },
   text: {
 

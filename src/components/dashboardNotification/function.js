@@ -1,5 +1,6 @@
 import React from 'react'
 import _ from 'lodash'
+import theme from '../../constant/theme';
 
 export default {
 
@@ -23,8 +24,28 @@ export default {
 
 // Local functions limitng to only this component
 
-export function hideAlert () {
+export function applyBackgroundColor(props) {
+  if (props['info']) {
+    return {
+      backgroundColor: theme.infoColor,
+    }
+  }
+  if (props['primary']) {
+    return {
+      backgroundColor: theme.primaryColor,
+    }
+  }
+  if (props['secondary']) {
+    return {
+      backgroundColor: theme.secondaryColor,
+    }
+  }
+  if (props['success']) {
+    return {
+      backgroundColor: theme.successColor,
+    }
+  }
   return {
-    height : 0
+    backgroundColor: theme.warnColor,
   }
 }
