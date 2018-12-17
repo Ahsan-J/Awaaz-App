@@ -11,12 +11,15 @@ import { Header, Left, Button, Icon, H2 } from 'native-base';
 
 
 class MainHeader extends Component {
-
   render() {
+    let leftIcon = "arrow-left"
+    if(this.props.iconLeft){
+      leftIcon = this.props.iconLeft;
+    }
     return (
       <View style={styles.headerContainer}>
         <TouchableOpacity style={styles.headerLeft} onPress={this.props.leftCallBack}>
-          <Icon name='menu' style={styles.headerLeftIcon}/>
+          <Icon type="MaterialCommunityIcons" name={leftIcon} style={styles.headerLeftIcon}/>
         </TouchableOpacity>
         <View style={styles.headerBody}>
           <H2 style={styles.headerTitle}>{this.props.title}</H2>
