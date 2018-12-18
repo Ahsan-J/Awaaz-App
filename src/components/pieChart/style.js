@@ -7,6 +7,7 @@ export default StyleSheet.create({
     height: getDeviceHeight() * 0.4, 
     width: getDeviceWidth(), 
     flex: 1, 
+    margin : moderateScale(5),
     flexDirection: 'row', 
     justifyContent: 'center' 
   },
