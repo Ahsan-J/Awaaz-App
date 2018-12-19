@@ -13,7 +13,7 @@ export default {
   /***********************Additonal Functions to be used within component ***************/
   onValueChange2 : function(value) {
     this.setState({
-      selected2: value
+      gender: value
     });
   },
   setDate(newDate) {

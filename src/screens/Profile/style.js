@@ -10,10 +10,10 @@ export default StyleSheet.create({
     backgroundColor: theme.secondaryColor,
   },
   avatarContainer : {
-    height : getDeviceHeight()*0.25,
+    height : getDeviceHeight()*0.2,
     width : getDeviceWidth(),
     alignItems:'center',
-    justifyContent:'center',
+    justifyContent:'flex-end',
   },
   exchangeIconTouchable:{
     position:'absolute',
@@ -36,16 +36,22 @@ export default StyleSheet.create({
     justifyContent:'space-around'
   },
   item : {
-    justifyContent:'space-between'
+    minHeight:moderateScale(60),
+    alignItems:'flex-start',
+    justifyContent:'flex-end',
   },
   label : {
-    flex: 0.43,
+    paddingTop : 0,
     paddingRight:0,
     marginRight : 0
   },
   input : {
+    flex:1,
+    flexDirection : 'row',
+    paddingBottom : 0,
+    justifyContent:'flex-end',
     color : theme.fontPrimaryColor,
-    flex:0.57,
+    fontSize : moderateScale(15),
   },
   registerButton : {
     backgroundColor : theme.primaryColor,
@@ -58,11 +64,11 @@ export default StyleSheet.create({
 
   },
   statusText : {
+    fontStyle: "italic",
     color : theme.fontPrimaryColor,
     textAlign:'center',
   },
   postButtonText : {
-    
     textDecorationColor:theme.fontPrimaryColor,
     textDecorationLine:"underline",
   }

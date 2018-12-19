@@ -10,10 +10,10 @@ export default StyleSheet.create({
     backgroundColor: theme.secondaryColor,
   },
   avatarContainer : {
-    height : getDeviceHeight()*0.25,
+    height : getDeviceHeight()*0.2,
     width : getDeviceWidth(),
     alignItems:'center',
-    justifyContent:'center',
+    justifyContent:'flex-end',
   },
   exchangeIconTouchable:{
     position:'absolute',
@@ -26,31 +26,40 @@ export default StyleSheet.create({
     padding:moderateScale(4),
   },
   formWrapper : {
-    height:getDeviceHeight()*.95,
+    height:getDeviceHeight()*.8,
     alignItems:'center',
     justifyContent:'flex-start',
   },
   form : {
-    height:getDeviceHeight()*0.9,
+    minHeight:getDeviceHeight()*0.8,
     width : getDeviceWidth()*0.95,
-    justifyContent:'space-around'
+    justifyContent:'space-around',
   },
   item : {
-    justifyContent:'space-between'
+    minHeight : moderateScale(55),
+    alignItems:'flex-start',
+    justifyContent:'flex-end',
+    // flex:1,
+    // backgroundColor:'red'
   },
   label : {
-    flex: 0.43,
+    paddingTop : 0,
     paddingRight:0,
     marginRight : 0
   },
   input : {
+    flex:1,
+    flexDirection : 'row',
+    paddingBottom : 0,
+    justifyContent:'flex-end',
     color : theme.fontPrimaryColor,
-    flex:0.57,
+    fontSize : moderateScale(15),
   },
   genderPicker : {
     width:moderateScale(100),
   },
   registerButton : {
+    marginTop : moderateScale(15),
     backgroundColor : theme.primaryColor,
   },
   registerText : {

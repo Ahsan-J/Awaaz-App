@@ -15,7 +15,7 @@ import {
 import f from './function.js'
 import styles from './style.js'
 import Header from '../../components/header/mainHeader';
-import { Content, Container, Form, Thumbnail, Item, Label, Picker, DatePicker, Button, Text } from 'native-base'
+import { Content, Container, Form, Thumbnail, Item, Label, Input, Picker, DatePicker, Button, Text } from 'native-base'
 import { openDrawer } from '../../helpers/drawerHelper.js';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -43,31 +43,31 @@ class Profile extends Component {
             </View>
             <View style={styles.formWrapper}>
               <Form style={styles.form}>
-                <Item inlineLabel last style={styles.item} >
+                <Item stackedLabel last style={styles.item} >
                   <Label style={styles.label}>Name</Label>
-                  <Text style={styles.input}>Name</Text>
+                  <Input style={styles.input} value="Name" />
                 </Item>
-                <Item inlineLabel last style={styles.item} >
+                <Item stackedLabel last style={styles.item} >
                   <Label style={styles.label}>Email</Label>
-                  <Text style={styles.input}>Email</Text>
+                  <Input style={styles.input} value="Email" />
                 </Item>
-                <Item picker inlineLabel last style={styles.item}>
+                <Item picker stackedLabel last style={styles.item}>
                   <Label style={styles.label}>Gender</Label>
-                  <Text style={styles.input}>Male</Text>
+                  <Input style={styles.input} value="male" />
                 </Item>
-                <Item picker inlineLabel last style={styles.item}>
+                <Item picker stackedLabel last style={styles.item}>
                   <Label style={styles.label}>Date of birth</Label>
-                  <Text style={styles.input}>DD\MM\YYYY</Text>
+                  <Input style={styles.input} value="dateof birth" />
                 </Item>
-                <Item inlineLabel last style={styles.item} >
+                <Item stackedLabel last style={styles.item} >
                   <Label style={styles.label}>Contact</Label>
-                  <Text style={styles.input}>Contact</Text>
+                  <Input style={styles.input} value="012212" />
                 </Item>
                 <Text style={styles.statusText}>Your Account Credentials are anonymous.{'\n'}Your Identity is secret.</Text>
                 <Button block style={styles.registerButton}>
                   <Text uppercase={false} style={styles.registerText}>Register Yourself</Text>
                 </Button>
-                <Text style={[styles.statusText,styles.postButtonText]}>Why Register?</Text>
+                <Text style={[styles.statusText, styles.postButtonText]}>Why Register?</Text>
               </Form>
             </View>
           </Content>

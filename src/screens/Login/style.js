@@ -11,10 +11,10 @@ export default StyleSheet.create({
   avatarContainer : {
     alignItems:'center',
     justifyContent:'flex-end',
-    flex:0.3
+    flex:0.35
   },
   formWrapper : {
-    flex:0.5,
+    flex:0.55,
     flexDirection : 'row',
     justifyContent:'center'
   },
@@ -25,16 +25,17 @@ export default StyleSheet.create({
     // marginBottom : moderateScale(10),
   },
   item : {
-    justifyContent:'space-around',
+    // justifyContent:'space-around
+    minHeight:moderateScale(60),
   },
   label : {
-    flex: 0.35,
+    paddingTop : 0,
     paddingRight:0,
     marginRight : 0
   },
   input : {
     color : theme.fontPrimaryColor,
-    flex:0.65,
+    fontSize : moderateScale(15),
   },
   registerButton : {
     backgroundColor : theme.primaryColor,
@@ -62,11 +63,13 @@ export default StyleSheet.create({
     fontSize : moderateScale(22),
   },
   facebookText : {
-    paddingLeft : moderateScale(10),
+    fontSize : moderateScale(12),
+    paddingLeft : moderateScale(3),
     paddingRight : moderateScale(10),
   },
   googleText : {
-    paddingLeft : moderateScale(10),
+    fontSize : moderateScale(12),
+    paddingLeft : moderateScale(3),
     paddingRight : moderateScale(10),
   },
   statusText : {
@@ -74,6 +77,8 @@ export default StyleSheet.create({
     textAlign:'center',
   },
   postButtonText : {
+    marginTop : moderateScale(5),
+    padding:moderateScale(2),
     textDecorationColor:theme.fontPrimaryColor,
     textDecorationLine:"underline",
   }

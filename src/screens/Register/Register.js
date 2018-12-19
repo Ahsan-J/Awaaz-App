@@ -54,15 +54,15 @@ class Register extends Component {
             </View>
             <View style={styles.formWrapper}>
               <Form style={styles.form}>
-                <Item inlineLabel last style={styles.item} >
+                <Item stackedLabel last style={styles.item} >
                   <Label style={styles.label}>Name</Label>
                   <Input style={styles.input}/>
                 </Item>
-                <Item inlineLabel last style={styles.item} >
+                <Item stackedLabel last style={styles.item} >
                   <Label style={styles.label}>Email</Label>
                   <Input style={styles.input}/>
                 </Item>
-                <Item picker inlineLabel last style={styles.item}>
+                <Item picker stackedLabel last style={styles.item}>
                   <Label style={styles.label}>Gender</Label>
                   <View style={styles.input}>
                     <Picker
@@ -81,7 +81,7 @@ class Register extends Component {
                     </Picker>
                   </View>
                 </Item>
-                <Item picker inlineLabel last style={styles.item}>
+                <Item picker stackedLabel last style={styles.item}>
                   <Label style={styles.label}>Date of birth</Label>
                   <View style={styles.input}>
                     <DatePicker
@@ -98,15 +98,15 @@ class Register extends Component {
                     />  
                   </View>
                 </Item>
-                <Item inlineLabel last style={styles.item} >
+                <Item stackedLabel last style={styles.item} >
                   <Label style={styles.label}>Contact</Label>
                   <Input style={styles.input}/>
                 </Item>
-                <Item inlineLabel last style={styles.item}>
+                <Item stackedLabel last style={styles.item}>
                   <Label style={styles.label}>Password</Label>
                   <Input style={styles.input}/>
                 </Item>
-                <Item inlineLabel last style={styles.item}>
+                <Item stackedLabel last style={styles.item}>
                   <Label style={styles.label}>Confirm Password</Label>
                   <Input style={styles.input}/>
                 </Item>
