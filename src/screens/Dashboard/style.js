@@ -26,5 +26,8 @@ export default StyleSheet.create({
     color : theme.fontPrimaryColor,
     fontSize : moderateScale(30),
   },
+  chart: {
+    flex: 1
+  }
 
 });

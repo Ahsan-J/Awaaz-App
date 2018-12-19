@@ -40,7 +40,7 @@ class Login extends Component {
         </View>
         <View style={styles.formWrapper}>
           <Form style={styles.form}>
-            <View style={{flex:0.6,justifyContent:'flex-start'}}>
+            <View style={{flex:0.5,justifyContent:'space-around'}}>
               <Item stackedLabel last style={styles.item} >
                 <Label style={styles.label}>Email or Phone Number</Label>
                 <Input style={styles.input} />

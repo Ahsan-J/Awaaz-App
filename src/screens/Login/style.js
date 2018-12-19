@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native'
 import theme from '../../constant/theme';
-import { getDeviceWidth, getDeviceHeight, moderateScale } from '../../helpers/sizeHelpers';
+import { getDeviceWidth, getDeviceHeight, moderateScale, verticalScale } from '../../helpers/sizeHelpers';
 
 export default StyleSheet.create({
   container: {
@@ -25,8 +25,9 @@ export default StyleSheet.create({
     // marginBottom : moderateScale(10),
   },
   item : {
-    // justifyContent:'space-around
-    minHeight:moderateScale(60),
+    minHeight:moderateScale(55),
+    alignItems:'flex-start',
+    justifyContent:'flex-end',
   },
   label : {
     paddingTop : 0,
@@ -34,6 +35,11 @@ export default StyleSheet.create({
     marginRight : 0
   },
   input : {
+    flex:1,
+    flexDirection : 'row',
+    paddingBottom : 0,
+    height : verticalScale(40),
+    justifyContent:'flex-end',
     color : theme.fontPrimaryColor,
     fontSize : moderateScale(15),
   },
