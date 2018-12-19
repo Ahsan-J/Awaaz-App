@@ -26,17 +26,17 @@ export default StyleSheet.create({
     padding:moderateScale(4),
   },
   formWrapper : {
-    height:getDeviceHeight()*0.9,
+    minHeight:getDeviceHeight()*0.8,
     alignItems:'center',
     justifyContent:'flex-start',
   },
   form : {
-    height:getDeviceHeight()*0.88,
+    minHeight:getDeviceHeight()*0.75,
     width : getDeviceWidth()*0.95,
     justifyContent:'space-around'
   },
   item : {
-    minHeight:moderateScale(60),
+    minHeight:moderateScale(55),
     alignItems:'flex-start',
     justifyContent:'flex-end',
   },
@@ -49,6 +49,7 @@ export default StyleSheet.create({
     flex:1,
     flexDirection : 'row',
     paddingBottom : 0,
+    height:moderateScale(40),
     justifyContent:'flex-end',
     color : theme.fontPrimaryColor,
     fontSize : moderateScale(15),

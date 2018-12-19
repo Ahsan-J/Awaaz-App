@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native'
 import theme from '../../constant/theme';
-import { getDeviceWidth, getDeviceHeight, moderateScale } from '../../helpers/sizeHelpers';
+import { getDeviceWidth, getDeviceHeight, moderateScale, verticalScale } from '../../helpers/sizeHelpers';
 
 export default StyleSheet.create({
   container: {
@@ -26,17 +26,17 @@ export default StyleSheet.create({
     padding:moderateScale(4),
   },
   formWrapper : {
-    height:getDeviceHeight()*.8,
+    minHeight:getDeviceHeight()*.8,
     alignItems:'center',
     justifyContent:'flex-start',
   },
   form : {
-    minHeight:getDeviceHeight()*0.8,
+    minHeight:getDeviceHeight()*0.75,
     width : getDeviceWidth()*0.95,
     justifyContent:'space-around',
   },
   item : {
-    minHeight : moderateScale(55),
+    minHeight : verticalScale(55),
     alignItems:'flex-start',
     justifyContent:'flex-end',
     // flex:1,
@@ -51,6 +51,7 @@ export default StyleSheet.create({
     flex:1,
     flexDirection : 'row',
     paddingBottom : 0,
+    height : verticalScale(40),
     justifyContent:'flex-end',
     color : theme.fontPrimaryColor,
     fontSize : moderateScale(15),
@@ -59,7 +60,7 @@ export default StyleSheet.create({
     width:moderateScale(100),
   },
   registerButton : {
-    marginTop : moderateScale(15),
+    marginTop : verticalScale(30),
     backgroundColor : theme.primaryColor,
   },
   registerText : {
