@@ -14,6 +14,7 @@ import styles from './style.js'
 import Header from '../../components/header/mainHeader';
 import {Container} from 'native-base'
 import { openDrawer } from '../../helpers/drawerHelper.js';
+import SingleAuthority from '../../components/singleAuthority/singleAuthority.js'
 
 class AuthoritiesInfo extends Component {
   constructor(props) {
@@ -28,9 +29,9 @@ class AuthoritiesInfo extends Component {
       <Container>
         <Header
           leftCallBack={()=> openDrawer()} 
-          title="AuthoritiesInfo"/>
+          title="Authorities"/>
         <View style={styles.container}>
-        
+          <SingleAuthority/>
         </View>
       </Container>
     );
