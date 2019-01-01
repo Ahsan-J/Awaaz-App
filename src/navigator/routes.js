@@ -1,8 +1,8 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation'
 import { Easing, Animated } from 'react-native'
+
 import Dashboard from '../screens/Dashboard/Dashboard.js'
 import Register from '../screens/Register/Register.js'
-import Report from '../screens/Report/Report.js'
 import EmergencyAlert from '../screens/EmergencyAlert/EmergencyAlert.js'
 import FindAlert from '../screens/FindAlert/FindAlert.js'
 import RecordNow from '../screens/RecordNow/RecordNow.js'
@@ -12,6 +12,14 @@ import Blogs from '../screens/Blogs/Blogs.js'
 import AboutUs from '../screens/AboutUs/AboutUs.js'
 import Profile from '../screens/Profile/Profile.js'
 import Login from '../screens/Login/Login.js'
+import Report_01 from '../screens/Report_01/Report_01.js';
+import Report_02 from '../screens/Report_02/Report_02.js';
+import Report_03 from '../screens/Report_03/Report_03.js';
+import Report_04 from '../screens/Report_04/Report_04.js';
+import Report_05 from '../screens/Report_05/Report_05.js';
+import Report_06 from '../screens/Report_06/Report_06.js';
+import PostReport from '../screens/PostReport/PostReport.js';
+import Case from '../screens/Case/Case.js'
 
 const AppNavigator = createStackNavigator({
   Dashboard: {
@@ -20,8 +28,26 @@ const AppNavigator = createStackNavigator({
   Register: {
     screen: Register
   },
-  Report: {
-    screen: Report
+  Report_01: {
+    screen: Report_01
+  },
+  Report_02: {
+    screen: Report_02
+  },
+  Report_03: {
+    screen: Report_03
+  },
+  Report_04: {
+    screen: Report_04
+  },
+  Report_05: {
+    screen: Report_05
+  },
+  Report_06: {
+    screen: Report_06
+  },
+  PostReport : {
+    screen : PostReport,
   },
   EmergencyAlert: {
     screen: EmergencyAlert
@@ -34,6 +60,9 @@ const AppNavigator = createStackNavigator({
   },
   MyCases: {
     screen: MyCases
+  },
+  Case: {
+    screen : Case
   },
   AuthoritiesInfo: {
     screen: AuthoritiesInfo
