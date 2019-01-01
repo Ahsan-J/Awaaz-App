@@ -27,7 +27,7 @@ class MyCases extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={()=> openDrawer()} 
+          leftCallBack={()=> this.props.navigation.goBack()} 
           title="My Cases"/>
         <View style={styles.container}>
         

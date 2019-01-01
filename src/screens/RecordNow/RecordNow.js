@@ -27,7 +27,7 @@ class RecordNow extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={()=> openDrawer()} 
+          leftCallBack={()=> this.props.navigation.goBack()} 
           title="Record Now"/>
         <View style={styles.container}>
          

@@ -19,7 +19,7 @@ import Header from '../../components/header/mainHeader';
 import { Container, Form, Thumbnail, Item, Label, Input, Button, Text } from 'native-base'
 import { openDrawer } from '../../helpers/drawerHelper.js';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { replaceNavigate } from '../../helpers/navigationHelper.js'
+import { replaceNavigate, navigate } from '../../helpers/navigationHelper.js'
 
 class Login extends Component {
   constructor(props) {
@@ -55,20 +55,20 @@ class Login extends Component {
                 <Text uppercase={false} style={styles.registerText}>Login</Text>
               </Button>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-                <Button style={styles.facebookButton}>
+                <Button style={styles.facebookButton} onPress={()=> replaceNavigate("Dashboard")}>
                   <Icon name='facebook-official' style={styles.facebookIcon} />
                   <Text uppercase={false} style={styles.facebookText}> Log in with Facebook</Text>
                 </Button>
-                <Button style={styles.googleButton}>
+                <Button style={styles.googleButton} onPress={()=> replaceNavigate("Dashboard")}>
                   <Icon name='google-plus' style={styles.googleIcon} />
                   <Text uppercase={false} style={styles.googleText}> Sign in with Google</Text>
                 </Button>
               </View>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigate("Register")}>
               <Text style={[styles.statusText, styles.postButtonText]}>Want to Register yourself?</Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> replaceNavigate("Dashboard")}>
               <Text style={[styles.statusText, styles.postButtonText]}>Skip and Become "Anonymous"</Text>
             </TouchableOpacity>
           </Form>

@@ -10,26 +10,27 @@ import DashboardStore from './store';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import dashboardConstant from './constant.json'
 import { getDeviceWidth } from '../../helpers/sizeHelpers.js';
+import { navigate } from '../../helpers/navigationHelper.js';
 
 export default {
 
   /**********************LifeCycle Components in Order **********************************/
-  
-  componentDidMount : function () {
-    
+
+  componentDidMount: function () {
+
   },
 
   /***********************Additonal Functions to be used within component ***************/
-  renderQuickButtons : function () {
-    const {Buttons} = dashboardConstant;
+  renderQuickButtons: function () {
+    const { Buttons } = dashboardConstant;
     return (
       <View style={styles.buttonsWrapper}>
-        {_.map(Buttons,function(button,index){
+        {_.map(Buttons, function (button, index) {
           return (
-          <TouchableOpacity style={[styles.touchableWrapper,applyDim(Buttons.length)]} key={JSON.stringify(button)}>
-            <Icon name={button.iconName} style={styles.buttonIcon}/>
-            <Text style={styles.buttonText}>{button.title}</Text>
-          </TouchableOpacity>
+            <TouchableOpacity style={[styles.touchableWrapper, applyDim(Buttons.length)]} key={JSON.stringify(button)} onPress={() => navigate(button.screen)}>
+              <Icon name={button.iconName} style={styles.buttonIcon} />
+              <Text style={styles.buttonText}>{button.title}</Text>
+            </TouchableOpacity>
           )
         })}
       </View>
@@ -51,9 +52,9 @@ export default {
 
 // Local functions limitng to only this component
 
-function applyDim (length) {
+function applyDim(length) {
   return {
-    height: (getDeviceWidth() * (10/length)*0.1) - styles.touchableWrapper.margin,
-    width:  (getDeviceWidth() * (10/length)*0.1) - styles.touchableWrapper.margin,
+    height: (getDeviceWidth() * (10 / length) * 0.1) - styles.touchableWrapper.margin,
+    width: (getDeviceWidth() * (10 / length) * 0.1) - styles.touchableWrapper.margin,
   }
 }

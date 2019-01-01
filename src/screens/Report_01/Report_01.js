@@ -37,7 +37,7 @@ class Report_01 extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={() => openDrawer()}
+          leftCallBack={() => this.props.navigation.goBack()}
           title="Report" />
         <View style={styles.container}>
           <State state={1} />

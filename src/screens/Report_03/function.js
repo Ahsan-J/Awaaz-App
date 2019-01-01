@@ -15,6 +15,7 @@ import {
 } from 'native-base';
 import ReportStore from './store';
 import { moderateScale } from '../../helpers/sizeHelpers';
+import { navigate } from '../../helpers/navigationHelper';
 
 export default {
 
@@ -32,6 +33,10 @@ export default {
 
   onValueChange: function () {
 
+  },
+
+  onNext:function (){
+    navigate("Report_04")
   },
 
   renderVictimFields: function () {

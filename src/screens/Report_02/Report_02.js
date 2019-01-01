@@ -33,12 +33,13 @@ class Report_02 extends Component {
 
     }
     this.componentDidMount = f.componentDidMount.bind(this);
+    this.onNext = f.onNext.bind(this);
   }
   render() {
     return (
       <Container>
         <Header
-          leftCallBack={() => openDrawer()}
+          leftCallBack={() => this.props.navigation.goBack()}
           title="Report" />
         <Content style={styles.container} contentContainerStyle={styles.contentContainer}>
           <State state={2} />

@@ -28,7 +28,7 @@ class Blogs extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={()=> openDrawer()} 
+          leftCallBack={()=> this.props.navigation.goBack()} 
           title="Blogs"/>
         <View style={styles.container}>
           <SingleBlog/>

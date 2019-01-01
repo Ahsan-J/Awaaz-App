@@ -27,7 +27,7 @@ class FindAlert extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={()=> openDrawer()} 
+          leftCallBack={()=> this.props.navigation.goBack()} 
           title="Find a Friend"/>
         <View style={styles.container}>
         

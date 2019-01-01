@@ -16,6 +16,7 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome'
 import ReportStore from './store';
 import NumberSpinner from '../../components/numberSpinner/numberSpinner.js';
+import { navigate } from '../../helpers/navigationHelper';
 
 
 export default {
@@ -35,6 +36,10 @@ export default {
   onValueChange: function () {
 
   },
+
+  onOkay : function () {
+    navigate("Dashboard");
+  },  
 
   /**********************Connecting and defining the Redux ******************************/
   mapStateToProps: function (state) {

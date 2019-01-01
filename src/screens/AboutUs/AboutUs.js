@@ -27,7 +27,7 @@ class AboutUs extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={()=> openDrawer()} 
+          leftCallBack={()=> this.props.navigation.goBack()} 
           title="About"/>
         <View style={styles.container}>
           

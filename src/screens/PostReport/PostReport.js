@@ -36,6 +36,7 @@ class PostReport extends Component {
     this.state = {
       key: 'The secret key'
     }
+    this.onOkay = f.onOkay.bind(this);
     this.getDetails = f.getDetails.bind(this);
     this.onValueChange = f.onValueChange.bind(this);
     this.componentDidMount = f.componentDidMount.bind(this);
@@ -43,9 +44,9 @@ class PostReport extends Component {
   render() {
     return (
       <Container>
-        <Header
+        {/* <Header
           leftCallBack={() => openDrawer()}
-          title="Report" />
+          title="Report" /> */}
         <View style={styles.container}>
 
           <View style={styles.headingTextWrapper}>
@@ -69,7 +70,7 @@ class PostReport extends Component {
             <Button style={styles.skipButton}>
               <Text uppercase={false} style={styles.skipText}>Save</Text>
             </Button>
-            <Button style={styles.nextButton} onPress={this.onNext}>
+            <Button style={styles.nextButton} onPress={this.onOkay}>
               <Text uppercase={false} style={styles.nextText}>OK</Text>
             </Button>
           </View>

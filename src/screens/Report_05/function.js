@@ -17,6 +17,7 @@ import {
 import ReportStore from './store';
 import { moderateScale } from '../../helpers/sizeHelpers';
 import NumberSpinner from '../../components/numberSpinner/numberSpinner.js';
+import { navigate } from '../../helpers/navigationHelper';
 
 
 export default {
@@ -35,6 +36,10 @@ export default {
 
   onValueChange: function () {
 
+  },
+
+  onNext:function (){
+    navigate("Report_06")
   },
 
   renderVictimFields: function () {

@@ -1,6 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 import ReportStore from './store';
+import { navigate } from '../../helpers/navigationHelper';
 
 export default {
 
@@ -9,7 +10,9 @@ export default {
   componentDidMount : function () {
     
   },
-
+  onNext:function (){
+    navigate("Report_03")
+  },
   /***********************Additonal Functions to be used within component ***************/
 
   /**********************Connecting and defining the Redux ******************************/

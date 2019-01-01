@@ -28,7 +28,7 @@ class AuthoritiesInfo extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={()=> openDrawer()} 
+          leftCallBack={()=> this.props.navigation.goBack()} 
           title="Authorities"/>
         <View style={styles.container}>
           <SingleAuthority/>

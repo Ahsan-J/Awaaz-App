@@ -40,7 +40,7 @@ class Register extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={() => openDrawer()}
+          leftCallBack={() => this.props.navigation.goBack()}
           title="Register" />
         <View style={styles.container}>
           <Content>

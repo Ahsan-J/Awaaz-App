@@ -34,7 +34,7 @@ class EmergencyAlert extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={() => openDrawer()}
+          leftCallBack={() => this.props.navigation.goBack()}
           title="Emergency Alert" />
         <View style={styles.container}>
           <View style={styles.quickButtonsContainer}>

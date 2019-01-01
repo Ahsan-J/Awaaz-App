@@ -45,10 +45,9 @@ class Dashboard extends Component {
         <View style={styles.container}>
           <Content>
             {this.renderQuickButtons()}
-
             <Notification hide={this.state.hideNotifcation} onPress={() => console.log('Pressed')} onDismiss={() => this.setState({ hideNotifcation: true })}>
               Notification
-          </Notification>
+            </Notification>
 
             <PieChart dataValues={datasetEx} title="My Case" />
           </Content>

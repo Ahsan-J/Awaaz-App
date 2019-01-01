@@ -37,6 +37,7 @@ class Report_03 extends Component {
       victims : 0,
       selfVictim : true,
     }
+    this.onNext = f.onNext.bind(this);
     this.getVictimCount = f.getVictimCount.bind(this);
     this.onValueChange = f.onValueChange.bind(this);
     this.renderVictimFields = f.renderVictimFields.bind(this)
@@ -46,7 +47,7 @@ class Report_03 extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={() => openDrawer()}
+          leftCallBack={() => this.props.navigation.goBack()}
           title="Report" />
         <Content contentContainerStyle={styles.contentContainer} style={styles.container}>
           <State state={3} />

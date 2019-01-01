@@ -2,15 +2,18 @@
   "Buttons" : [
     {
       "title" : "Alert",
-      "iconName" : "exclamation-circle"
+      "iconName" : "exclamation-circle",
+      "screen" : "EmergencyAlert"
     },
     {
       "title" : "Record Now",
-      "iconName" : "microphone"
+      "iconName" : "microphone",
+      "screen" : "RecordNow"
     },
     {
       "title" : "Report",
-      "iconName" : "file-text-o"
+      "iconName" : "file-text-o",
+      "screen" : "Report_01"
     }
   ]
 }

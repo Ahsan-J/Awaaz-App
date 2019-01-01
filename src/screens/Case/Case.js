@@ -41,7 +41,7 @@ class MyCases extends Component {
     return (
       <Container>
         <Header
-          leftCallBack={() => openDrawer()}
+          leftCallBack={() => this.props.navigation.goBack()}
           title="Case" />
         <Content contentContainerStyle={styles.contentContainerStyle} style={styles.container}>
           {this.renderCollapsibleReport()}
