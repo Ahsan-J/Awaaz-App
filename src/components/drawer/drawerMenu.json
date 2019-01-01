@@ -45,6 +45,11 @@
     "screenName" : "Blogs"
   },
   {
+    "icon" : "cog",
+    "menuLabel" : "Settings",
+    "screenName" : "Settings"
+  },
+  {
     "icon" : "bullhorn",
     "menuLabel" : "About us",
     "screenName" : "AboutUs"
