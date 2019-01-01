@@ -19,7 +19,8 @@ import Report_04 from '../screens/Report_04/Report_04.js';
 import Report_05 from '../screens/Report_05/Report_05.js';
 import Report_06 from '../screens/Report_06/Report_06.js';
 import PostReport from '../screens/PostReport/PostReport.js';
-import Case from '../screens/Case/Case.js'
+import Case from '../screens/Case/Case.js';
+import Settings from '../screens/Settings/Settings.js'
 
 const AppNavigator = createStackNavigator({
   Dashboard: {
@@ -70,6 +71,9 @@ const AppNavigator = createStackNavigator({
   Blogs: {
     screen: Blogs
   },
+  Settings :{
+    screen : Settings
+  },  
   AboutUs: {
     screen: AboutUs
   },
