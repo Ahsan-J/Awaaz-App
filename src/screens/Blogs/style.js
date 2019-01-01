@@ -4,8 +4,8 @@ import theme from '../../constant/theme';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: theme.secondaryColor,
   },
   welcome: {

@@ -14,6 +14,7 @@ import styles from './style.js'
 import Header from '../../components/header/mainHeader';
 import {Container} from 'native-base'
 import { openDrawer } from '../../helpers/drawerHelper.js';
+import SingleBlog from '../../components/singleBlog/singleBlog.js'
 
 class Blogs extends Component {
   constructor(props) {
@@ -30,7 +31,7 @@ class Blogs extends Component {
           leftCallBack={()=> openDrawer()} 
           title="Blogs"/>
         <View style={styles.container}>
-        
+          <SingleBlog/>
         </View>
       </Container>
     );
