@@ -1,17 +1,17 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation'
-import { Easing, Animated } from 'react-native'
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { Easing, Animated } from 'react-native';
 
-import Dashboard from '../screens/Dashboard/Dashboard.js'
-import Register from '../screens/Register/Register.js'
-import EmergencyAlert from '../screens/EmergencyAlert/EmergencyAlert.js'
-import FindAlert from '../screens/FindAlert/FindAlert.js'
-import RecordNow from '../screens/RecordNow/RecordNow.js'
-import MyCases from '../screens/MyCases/MyCases.js'
-import AuthoritiesInfo from '../screens/AuthoritiesInfo/AuthoritiesInfo.js'
-import Blogs from '../screens/Blogs/Blogs.js'
-import AboutUs from '../screens/AboutUs/AboutUs.js'
-import Profile from '../screens/Profile/Profile.js'
-import Login from '../screens/Login/Login.js'
+import Dashboard from '../screens/Dashboard/Dashboard.js';
+import Register from '../screens/Register/Register.js';
+import EmergencyAlert from '../screens/EmergencyAlert/EmergencyAlert.js';
+import FindAlert from '../screens/FindAlert/FindAlert.js';
+import RecordNow from '../screens/RecordNow/RecordNow.js';
+import MyCases from '../screens/MyCases/MyCases.js';
+import AuthoritiesInfo from '../screens/AuthoritiesInfo/AuthoritiesInfo.js';
+import Blogs from '../screens/Blogs/Blogs.js';
+import AboutUs from '../screens/AboutUs/AboutUs.js';
+import Profile from '../screens/Profile/Profile.js';
+import Login from '../screens/Login/Login.js';
 import Report_01 from '../screens/Report_01/Report_01.js';
 import Report_02 from '../screens/Report_02/Report_02.js';
 import Report_03 from '../screens/Report_03/Report_03.js';
@@ -20,7 +20,8 @@ import Report_05 from '../screens/Report_05/Report_05.js';
 import Report_06 from '../screens/Report_06/Report_06.js';
 import PostReport from '../screens/PostReport/PostReport.js';
 import Case from '../screens/Case/Case.js';
-import Settings from '../screens/Settings/Settings.js'
+import Settings from '../screens/Settings/Settings.js';
+import PostAlert from '../screens/PostAlert/PostAlert.js';
 
 const AppNavigator = createStackNavigator({
   Dashboard: {
@@ -49,6 +50,9 @@ const AppNavigator = createStackNavigator({
   },
   PostReport : {
     screen : PostReport,
+  },
+  PostAlert : {
+    screen : PostAlert,
   },
   EmergencyAlert: {
     screen: EmergencyAlert
