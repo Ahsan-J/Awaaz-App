@@ -22,7 +22,7 @@ class MainHeader extends Component {
           <Icon type="MaterialCommunityIcons" name={leftIcon} style={styles.headerLeftIcon}/>
         </TouchableOpacity>
         <View style={styles.headerBody}>
-          <H2 style={styles.headerTitle}>{this.props.title}</H2>
+          <Text style={styles.headerTitle}>{this.props.title}</Text>
         </View>
         <TouchableOpacity style={styles.headerRght}>
 
