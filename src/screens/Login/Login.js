@@ -22,16 +22,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { replaceNavigate, navigate } from '../../helpers/navigationHelper.js'
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      gender: undefined,
-      chosenDate: new Date()
-    }
-    this.onValueChange2 = f.onValueChange2.bind(this);
-    this.setDate = f.setDate.bind(this);
-    this.componentDidMount = f.componentDidMount.bind(this);
-  }
+  login = f.login.bind(this)
+  componentDidMount = f.componentDidMount.bind(this);
   render() {
     return (
       <Container style={styles.container}>
@@ -41,19 +33,29 @@ class Login extends Component {
         <View style={styles.formWrapper}>
           <Form style={styles.form}>
             <View style={{flex:0.5,justifyContent:'space-around'}}>
-              <Item stackedLabel last style={styles.item} >
+              <Item floatingLabel last style={styles.item} >
                 <Label style={styles.label}>Email or Phone Number</Label>
-                <Input style={styles.input} />
+                <Input 
+                  onSubmitEditing={()=> console.log(this)}
+                  keyboardType="email-address"
+                  getRef={email => this.email = email}
+                  style={styles.input} 
+                  />
               </Item>
-              <Item stackedLabel last style={styles.item} >
+              <Item floatingLabel last style={styles.item} >
                 <Label style={styles.label}>Password</Label>
-                <Input style={styles.input} />
+                <Input 
+                  secureTextEntry
+                  keyboardType="default"
+                  getRef={password => this.password = password}
+                  style={styles.input} 
+                  />
               </Item>
             </View>
             <View style={{flex:0.4,justifyContent:'space-around'}}>
-              <Button block style={styles.registerButton} onPress={() => replaceNavigate("Dashboard")}>
+              <TouchableOpacity style={styles.registerButton} onPress={() => this.login()}>
                 <Text uppercase={false} style={styles.registerText}>Login</Text>
-              </Button>
+              </TouchableOpacity>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                 <Button style={styles.facebookButton} onPress={()=> replaceNavigate("Dashboard")}>
                   <Icon name='facebook-official' style={styles.facebookIcon} />

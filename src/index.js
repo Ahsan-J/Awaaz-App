@@ -8,6 +8,7 @@ import { getActiveRouteName, setTopLevelNavigator } from './helpers/navigationHe
 import { connect } from 'react-redux'
 import { setActiveRoute } from './redux/actions/general.js';
 import { closeDrawer } from './helpers/drawerHelper.js';
+import Spinner from './components/spinner/Spinner.js';
 
 // Global Component to handle global files
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
     return (
       <Drawer style={styles.container}>
         <StatusBar hidden />
+        <Spinner isVisible={this.props.loader}/>
         <Navigator
           ref={navigator => setTopLevelNavigator(navigator)}
           onNavigationStateChange={(prevState, currentState) => {
@@ -39,7 +41,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-
+    loader: state.general.loader
   }
 }
 
