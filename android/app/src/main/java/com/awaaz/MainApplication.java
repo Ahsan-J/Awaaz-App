@@ -13,6 +13,7 @@ import com.facebook.react.bridge.ReadableNativeMap;
 
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 
 import java.util.Arrays;
 import java.util.List;
@@ -31,7 +32,8 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
           new MPAndroidChartPackage(),
           new SplashScreenReactPackage(),
-          new RNGestureHandlerPackage()
+          new RNGestureHandlerPackage(),
+          new RNDeviceInfo()
       );
     }
 

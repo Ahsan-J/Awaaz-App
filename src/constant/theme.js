@@ -1,3 +1,5 @@
+import { moderateScale } from "../helpers/sizeHelpers";
+
 export default {
   primaryColor : "#B32E2E", // Red-Brown
 
@@ -19,4 +21,6 @@ export default {
   secondaryColor : "#2B2924", // Rasin Black
   fontPrimaryColor : "#ffffff",
   fontSecondaryColor : "#000000",
+
+  spacing: moderateScale(5),
 }

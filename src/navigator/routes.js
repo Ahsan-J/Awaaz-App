@@ -22,6 +22,7 @@ import PostReport from '../screens/PostReport/PostReport.js';
 import Case from '../screens/Case/Case.js';
 import Settings from '../screens/Settings/Settings.js';
 import PostAlert from '../screens/PostAlert/PostAlert.js';
+import Splash from '../screens/Splash/Splash.js';
 
 const AppNavigator = createStackNavigator({
   Dashboard: {
@@ -86,11 +87,14 @@ const AppNavigator = createStackNavigator({
   },
   Login : {
     screen : Login
+  },
+  Splash : {
+    screen: Splash
   }
 },
   {
     headerMode: 'none',
-    initialRouteName: 'Login',
+    initialRouteName: 'Splash',
     navigationOptions: {
       gesturesEnabled: true,
     },

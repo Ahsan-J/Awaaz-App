@@ -44,6 +44,10 @@ export default StyleSheet.create({
     fontSize : moderateScale(15),
   },
   registerButton : {
+    width: "100%",
+    alignItems:'center',
+    justifyContent:'center',
+    padding: theme.spacing*2,
     backgroundColor : theme.primaryColor,
   },
   registerText : {
