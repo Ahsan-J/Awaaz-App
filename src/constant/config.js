@@ -2,7 +2,7 @@ import {
   Platform
 } from 'react-native'
 
-export const BASE_URL = "http://10.10.2.201:7000"
+export const BASE_URL = "https://awaaz-server.herokuapp.com/"
 export const ACCESS_TOKEN_KEY = "Awaaz_access_token_key";
 export const REFRESH_TOKEN_KEY = "Awaaz_refresh_token_key";
 export const DEVICE_ID = "Awaaz_device_id_key";
